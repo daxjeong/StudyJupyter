@@ -1,0 +1,51 @@
+1) 아나콘다 프롬프트 관리자 권한으로 열기
+2) c:\user\ad..아나콘다 root로 이동해서
+3) 가상환경 django 활성화(activate)
+4) tutorial 폴더로 이동
+5) code . dmfh vs-code 열기
+
+--------------------------------------------------
+
+** 터미널에서 웹서버 실행하기
+python manage.py runserver
+
+터미널에서 웹서버 종료하기
+Ctrl+C
+
+App 생성하기
+django-admin startapp testapp
+
+django 프로젝트 생성하기
+django-admin startproject config .
+
+버전확인
+conda list | findstr django 
+django-admin --version
+
+가상환경 목록보기
+conda env list
+
+django 가상환경 만들기
+conda create --name django
+
+생성한 django 가상환경으로 활성화
+conda activate django
+
+가상환경 비활성화
+conda deactivate
+
+----------------------------------------------
+<django 가상환경에 기본 라이브러리 설치하기>
+주피터노트북 설치
+pip install jupyter notebook
+
+가상환경에 커널 연결하기
+python -m ipykernel install --user --name django --display-name django_kernel
+
+기본 설치 라이브러리(1)
+pip install ipython matplotlib pandas sklearn xlrd seaborn
+
+기본 설치 라이브러리(2)
+pip install openpyxl
+-----------------------------------------------
+

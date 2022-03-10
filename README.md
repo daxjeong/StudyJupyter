@@ -70,3 +70,8 @@ Jupyter 학습 리포지토리
 - 웹크롤링  (멜론사이트)
 - selenium
 - BeautifulSoup
+
+### 12일차
+- 통계분석
+  - t검정
+- Django
