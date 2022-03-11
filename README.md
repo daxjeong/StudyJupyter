@@ -75,3 +75,13 @@ Jupyter 학습 리포지토리
 - 통계분석
   - t검정
 - Django
+  - 가상환경 만들기
+  - 프로젝트 생성하기
+  - 웹서버 실행하기
+
+### 13일차
+- Django
+  - App 생성하기
+  - urls, view
+- DB Browser for SQLite 설치
+- 모델 생성하여 데이터 조회

@@ -1,3 +1,4 @@
+
 1) 아나콘다 프롬프트 관리자 권한으로 열기
 2) c:\user\ad..아나콘다 root로 이동해서
 3) 가상환경 django 활성화(activate)
@@ -49,3 +50,22 @@ pip install ipython matplotlib pandas sklearn xlrd seaborn
 pip install openpyxl
 -----------------------------------------------
 
+- Client(클라이언트)의 request(요청) -> django의 urls.py -> views.py -> templates(html)의 순서로 내부 흐름
+
+- 새로운 app 만들면 config의 settings에 'INSTALLED_APPS'에 추가하기( , 꼭쓰기)
+(INSTALLED_APPS = 프로젝트에 사용될 App명 등록, 목록의 상단에 입력, 가끔 static 오류 발생)
+
+<데이터베이스에 생성(또는 조회)될 테이블 내용 작성 - Model>
+- 모델은 무조건 class로 만듬
+- class 이름 = Table 이름
+- 클래스 이름의 첫글자는 무조건 대문자
+
+* anaconda prompt에서 진행하기
+- python manage.py makemigrations firstapp 데이터베이스에서 적용될 내용 정리
+- python manage.py migrate 데이터베이스에 적용 -> 테이블이 실제로 생성되는 시점
+
+
+-----------------------------------------------
+
+* 오류
+SQLite database is locked -> 해당 SQLite 를 조회하고 있던 프로그램(DB Browser for SQLite)을 종료한 뒤, migrate 명령을 다시 실행하면 에러없이 진행
