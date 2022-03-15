@@ -1,0 +1,19 @@
+<body>
+    <h1>show2 - 행과 열의 테이블로 그려보기..</h1>
+    <hr>
+    <table border="1" width="100%">
+        <tr bgcolor="pink">
+            {% comment %} 이곳은 제목이 들어갑니다. {% endcomment %}
+            <th width="40%">아이디</th>
+            <th>이름</th>
+        </tr>
+        {% comment %} 아래는 테이블에서 조회한 각각의 행들을 반복하여 출력.. {% endcomment %}
+        {% for column in table %}
+        <tr>
+            {% comment %} 이곳은 각 행마다 컬럼의 값들을 입력하는 곳입니다. {% endcomment %}
+                <td align="center"> {{column.id}} </td>
+                <td align="center"> {{column.name}} </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>

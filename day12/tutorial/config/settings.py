@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [ # 프로젝트에 사용될 App명 등록, 목록의 상단에 입력
+    'pandasapp',
     'firstapp',
     'secondapp',
     'django.contrib.admin',

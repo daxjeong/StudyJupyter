@@ -85,3 +85,7 @@ Jupyter 학습 리포지토리
   - urls, view
 - DB Browser for SQLite 설치
 - 모델 생성하여 데이터 조회
+
+### 14일차
+- Django
+  - 테이블 만들기

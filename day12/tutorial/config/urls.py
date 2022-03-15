@@ -28,5 +28,6 @@ urlpatterns = [
     path('home/', views.home),
     path('second/', include('secondapp.urls')),
     path('show/', views.show),
-    path('insert/', views.insert)
+    path('insert/', views.insert),
+    path('pandas/', include('pandasapp.urls'))
 ]

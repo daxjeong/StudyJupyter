@@ -19,6 +19,8 @@ def home(request):
 
 from .models import Curriculum
 
+
+
 def insert(request):
     # 1-linux 입력
     Curriculum.objects.create(name='linux')
@@ -31,6 +33,9 @@ def insert(request):
     Curriculum(name='django').save()
     return HttpResponse('데이터 입력 완료')
 
+
+
+
 # 모델을 활용한 데이터 조회
 def show(request):
     curriculum = Curriculum.objects.all()
@@ -38,3 +43,23 @@ def show(request):
     for c in curriculum:
         result += c.name + '<br>'
     return HttpResponse(result)
+
+
+
+# html 페이지에 조회 결과 출력하기
+def show2(request):
+    curriculum = Curriculum.objects.all()
+    
+    return render(
+        request, 'firstapp/show.html', {'data': curriculum}
+    )
+
+
+
+# html 페이지에 테이블(행과 열)형태로 그려보기
+def show3(request):
+    curriculum = Curriculum.objects.all()
+    
+    return render(
+        request, 'firstapp/show2.html', {'table': curriculum}
+    )
